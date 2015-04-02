@@ -49,7 +49,8 @@
         return;
       }
 
-      var re = ^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$; //E-mnail regex
+      console.log("blah");
+      var re = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$/; //E-mnail regex
       if(!re.test(from)) {
         $("#errorSpan").text("That e-mail is not valid!");
         return;
