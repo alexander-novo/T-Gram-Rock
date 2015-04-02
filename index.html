@@ -11,11 +11,11 @@
   
   <form style="float:left;margin-left:50px">
     <span style="font-weight:bold;">Contact us:</span><br>
-    Subject: <input type="text" name="subject" id="subject" style="width:350px;margin-left:20px;"><br>
+    Subject: <input type="text" name="subject" id="subject" style="width:350px;margin-left:20px;" pattern="/^{1,0}$/"><br>
     From: <input type="email" name="from" id="from" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i" style="width:350px;margin-left:32px;margin-top:10px;margin-bottom:10px;"><br>
     <span style="float:left">Content:</span> <textarea id="content" style="width:400px;height:200px;margin-left:21px;float:right;"></textarea><br>
     <div style="clear:both"></div>
-    <input type="submit" name="send" id="send" value="Send" style="float:right;margin:7px;">
+    <input type="submit" name="send" id="send" value="Send" style="float:right;margin:7px;" pattern="/^{1,0}$/">
     <span id="errorSpan" style="color:red;float:right;margin:7px;"></span>
   </form>
 
@@ -28,7 +28,7 @@
     var emails = ["alexander_novo@mail.tmcc.edu", "CoreyPena@gmail.com", "Sharonaphillips61@gmail.com", "pckillagoku@gmail.com"];
 
     $(document).ready(function() {
-      $("#send").click(onFormSubmit);
+      $("#send").submit(onFormSubmit);
     });
 
     function onFormSubmit(e) {
