@@ -12,7 +12,7 @@
   <form style="float:left;margin-left:50px">
     <span style="font-weight:bold;">Contact us:</span><br>
     Subject: <input type="text" name="subject" id="subject" style="width:350px;margin-left:20px;" pattern="/^{1,}$/" required="required"><br>
-    From: <input type="email" name="from" id="from" required="required" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i" style="width:350px;margin-left:32px;margin-top:10px;margin-bottom:10px;"><br>
+    From: <input type="email" name="from" id="from" required="required" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$" style="width:350px;margin-left:32px;margin-top:10px;margin-bottom:10px;"><br>
     <span style="float:left">Content:</span> <textarea id="content" style="width:400px;height:200px;margin-left:21px;float:right;" required="required" pattern="/^{1,}$/"></textarea><br>
     <div style="clear:both"></div>
     <input type="submit" name="send" id="send" value="Send" style="float:right;margin:7px;">
@@ -49,7 +49,7 @@
         return;
       }
 
-      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; //E-mnail regex
+      var re = ^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$; //E-mnail regex
       if(!re.test(from)) {
         $("#errorSpan").text("That e-mail is not valid!");
         return;
