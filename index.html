@@ -9,7 +9,7 @@
     <li>Jaime Parra-Alvarez</li>
   </ul>
   
-  <form style="float:left;margin-left:50px">
+  <form style="float:left;margin-left:50px" id="form">
     <span style="font-weight:bold;">Contact us:</span><br>
     Subject: <input type="text" name="subject" id="subject" style="width:350px;margin-left:20px;" pattern="/^{1,}$/" required="required"><br>
     From: <input type="email" name="from" id="from" required="required" style="width:350px;margin-left:32px;margin-top:10px;margin-bottom:10px;"><br>
@@ -28,7 +28,7 @@
     var emails = ["alexander_novo@mail.tmcc.edu", "CoreyPena@gmail.com", "Sharonaphillips61@gmail.com", "pckillagoku@gmail.com"];
 
     $(document).ready(function() {
-      $("#send").submit(onFormSubmit);
+      $("#form").submit(onFormSubmit);
     });
 
     function onFormSubmit(e) {
