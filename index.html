@@ -76,7 +76,10 @@
           }
         }
       }).done(function(response) {
-        console.log(response);
+        if(response[0].status = "sent") {
+          $("#errorSpan").css("color", "green");
+          $("#errorSpan").text("E-mail sent!");
+        }
       });
       
       return false;
