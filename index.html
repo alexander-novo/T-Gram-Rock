@@ -79,6 +79,10 @@
         if(response[0].status = "sent") {
           $("#errorSpan").css("color", "green");
           $("#errorSpan").text("E-mail sent!");
+          
+          $("#subject").text("");
+          $("#from").text("");
+          $("#content").text("");
         }
       });
       
