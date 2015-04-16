@@ -1,2 +1,2 @@
 # T-Gram-Rock
-Goobldy Gook
+T-Gram-Rock
