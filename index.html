@@ -1,5 +1,7 @@
 <html>
-<head></head>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
 <body>
   <h1>Members:</h1>
   <ul style="float:left;">
@@ -24,10 +26,36 @@
 
   <br>
 
-  <table id="vidTable">
+  <table id="vidTable" border="1">
+    <tr>
+      <td class="rowHeader"></td>
+      <td class="rowHeader">Alexander Novotny</td>
+      <td class="rowHeader">Corey Pena</td>
+      <td class="rowHeader">Sharon Phillips</td>
+      <td class="rowHeader">Jaime Parra-Alvarez</td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Planning</td>
+      <td><img src="Thumbs/Alexander/I-Love-Lucy-Vitameatavegamin.png" class="thumb" onClick="onThumbClick('Videos/Alexander/I-Love-Lucy-Vitameatavegamin.webm')"></td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Fucking Tables</td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Execution</td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Risk Management</td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Quality Control</td>
+    </tr>
+    <tr>
+      <td class="rowHeader">Communications</td>
+    </tr>
   </table>
-  <video style="width:175px;height:auto;">
-    <source src="Videos/Alexander/I-Love-Lucy-Vitameatavegamin.webm" type="video/webm">
+  <!--<video style="width:175px;height:auto;">-->
+  <video id="video">
     Your browser does not support HTML 5 video!
   </video>
 
@@ -96,6 +124,10 @@
       });
       
       return false;
+    }
+
+    function onThumbClick(e) {
+
     }
   </script>
 </body>
