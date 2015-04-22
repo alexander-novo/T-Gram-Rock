@@ -79,7 +79,9 @@
         $("#vidTable").html($("#vidTable").html() + "<td class=\"rowHeader\"></td>");
         for(var member in values.members) {
           $("#vidTable").html($("#vidTable").html() + "<td class=\"rowHeader\">" + member + "</td>");
+          console.log(member);
         }
+        console.log($("#vidTable").html());
       })
     }
 
