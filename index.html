@@ -72,7 +72,7 @@
     });
 
     function setupTable() {
-      $.getJSON("values.json", function(data) {
+      $.getJSON("/values.json", function(data) {
         values = data;
         $("#vidTable").html("<tr>");
         //$("#vidTable").html($("#vidTable").html() + "");
