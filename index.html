@@ -27,7 +27,7 @@
   <br>
 
   <table id="vidTable" border="1">
-    <tr>
+    <!-- <tr>
       <td class="rowHeader"></td>
       <td class="rowHeader">Alexander Novotny</td>
       <td class="rowHeader">Corey Pena</td>
@@ -36,7 +36,7 @@
     </tr>
     <tr>
       <td class="rowHeader">Planning</td>
-      <td><img src="Thumbs/Alexander/I-Love-Lucy-Vitameatavegamin.png" class="thumb" onClick="onThumbClick('Videos/Alexander/I-Love-Lucy-Vitameatavegamin.webm')"></td>
+      <td><img src="Thumbs/Alexander/I-Love-Lucy-Vitameatavegamin.png" class="thumb"></td>
     </tr>
     <tr>
       <td class="rowHeader">Fucking Tables</td>
@@ -52,7 +52,7 @@
     </tr>
     <tr>
       <td class="rowHeader">Communications</td>
-    </tr>
+    </tr> -->
   </table>
   <!--<video style="width:175px;height:auto;">-->
   <video id="video">
@@ -64,9 +64,24 @@
     var members = ["Alexander Novotny", "Corey Pena", "Sharon Phillips", "Jaime Parra-Alvarez"];
     var emails = ["alexander_novo@mail.tmcc.edu", "CoreyPena@gmail.com", "Sharonaphillips61@gmail.com", "pckillagoku@gmail.com"];
 
+    var values;
+
     $(document).ready(function() {
       $("#form").submit(onFormSubmit);
+      setupTable();
     });
+
+    function setupTable() {
+      $.getJSON("values.json", function(data) {
+        values = data;
+        $("#vidTable").html("<tr>");
+        //$("#vidTable").html($("#vidTable").html() + "");
+        $("#vidTable").html($("#vidTable").html() + "<td class=\"rowHeader\"></td>");
+        for(var member in values.members) {
+          $("#vidTable").html($("#vidTable").html() + "<td class=\"rowHeader\">" + member + "</td>");
+        }
+      })
+    }
 
     function onFormSubmit(e) {
       var subject = $("#subject").val();
@@ -124,10 +139,6 @@
       });
       
       return false;
-    }
-
-    function onThumbClick(e) {
-
     }
   </script>
 </body>
