@@ -72,8 +72,9 @@
     });
 
     function setupTable() {
-      $.getJSON("./values.json", function(data) {
+      $.getJSON("/T-Gram-Rock/values.json", function(data) {
         values = data;
+        console.log(data);
         $("#vidTable").html("<tr>");
         //$("#vidTable").html($("#vidTable").html() + "");
         $("#vidTable").html($("#vidTable").html() + "<td class=\"rowHeader\"></td>");
@@ -82,7 +83,7 @@
           console.log(member);
         }
         console.log($("#vidTable").html());
-      })
+      });
     }
 
     function onFormSubmit(e) {
