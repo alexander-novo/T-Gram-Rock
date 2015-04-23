@@ -55,7 +55,7 @@
     </tr> -->
   </table>
   <!--<video style="width:175px;height:auto;">-->
-  <video id="video">
+  <video id="video" width="700" onended="vidEnded()">
     Your browser does not support HTML 5 video!
   </video>
 
@@ -80,7 +80,7 @@
         for(var member in values.members) {
           tableHTML += "<td>";
           if("videos" in values.members[member] && category in values.members[member].videos) {
-            tableHTML += "<a href=\"#\"><img src=\"Thumbs/" + member + "/" + values.members[member].videos[category].thumb + "\" class=\"thumb\" onclick=\"thumbClick('" + member + "', '" + category + "')\"></a>";
+            tableHTML += "<a href=\"#!\"><img src=\"Thumbs/" + member + "/" + values.members[member].videos[category].thumb + "\" class=\"thumb\" onclick=\"thumbClick('" + member + "', '" + category + "')\"></a>";
           }
           tableHTML += "</td>";
         }
@@ -90,7 +90,34 @@
     }
 
     function thumbClick(member, category) {
-      console.log("Displaying " + member + "'s " + category + " video.")
+      console.log("Displaying " + member + "'s " + category + " video.");
+      var vidHTML = "<source src=\"Videos/" + member + "/" + values.members[member].videos[category].source + "\" type=\"" + values.members[member].videos[category].type + "\">"
+      $("#video").html(vidHTML);
+      $("#video").load();
+
+      var elem = $("video")[0];
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      } else if (elem.mozRequestFullScreen) {
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      }
+      elem.play();
+    }
+
+    function vidEnded() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
     }
 
     function onFormSubmit(e) {
