@@ -12,3 +12,11 @@ td {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#vidTable {
+	float: left;
+}
+
+#video {
+	float: right;
+}
