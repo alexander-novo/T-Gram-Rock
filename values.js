@@ -36,7 +36,7 @@ var values = {
         "Risk Management": {
           source: "Corey Risk Management.mp4",
           type: "video/mp4",
-          thumb: "CoreyRisKManagement.jpg",
+          thumb: "CoreyRiskManagement.jpg",
           title: "Dr. Manhattan fixes a situation.",
           original: "Watchmen",
           description: "Dr Manhattan manages a risky loose end."
