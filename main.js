@@ -6,6 +6,9 @@ $(document).ready(function() {
   }, function(e) {
     $( this ).removeAttr("controls");
   });
+
+  var msg = new SpeechSynthesisUtterance('Hello World');
+  window.speechSynthesis.speak(msg);
 });
 
 function setupTable() {
@@ -32,15 +35,15 @@ function setupTable() {
 }
 
 function thumbClick(member, category) {
-  console.log("Displaying " + member + "'s " + category + " video.");
   var vidHTML = "<source src=\"Videos/" + member + "/" + values.members[member].videos[category].source + "\" type=\"" + values.members[member].videos[category].type + "\">"
   $("#video").html(vidHTML);
   $("#video").load();
 
-  $(window).scrollTop($("#vidTable").position().top + $(document).height());
-  console.log($(window).scrollTop());
-  $(window).scrollTop($("#vidTable").position().top + $(document).height());
-  console.log($(window).scrollTop());
+  $("#mainTable")[0].scrollIntoView(); // I have spent hours on this shit and it does not work. FML
+
+  $("#vidTitle").text(values.members[member].videos[category].title);
+  $("#vidOriginal").text(values.members[member].videos[category].original);
+  $("#vidDescription").text(values.members[member].videos[category].description);
 
   var elem = $("video")[0];
   if (elem.requestFullscreen) {

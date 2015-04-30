@@ -1,5 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <title> T-Gram-Rock </title>
+
+  <meta name="author" content="Alexander Novotny" />
+  <meta name="description" content="Home page for the T-Gram-Rock project" />
+  <meta name="keywords" content="T Gram Rock T-Gram-Rock project management final" />
+  
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
@@ -26,38 +34,24 @@
 
   <br>
 
-  <table id="vidTable" border="1">
-    <!-- <tr>
-      <td class="rowHeader"></td>
-      <td class="rowHeader">Alexander Novotny</td>
-      <td class="rowHeader">Corey Pena</td>
-      <td class="rowHeader">Sharon Phillips</td>
-      <td class="rowHeader">Jaime Parra-Alvarez</td>
-    </tr>
+  <table id="mainTable">
     <tr>
-      <td class="rowHeader">Planning</td>
-      <td><img src="Thumbs/Alexander/I-Love-Lucy-Vitameatavegamin.png" class="thumb"></td>
+      <td><table id="vidTable" border="1"></table></td>
+      <td valign="top">
+        <video id="video" onended="vidEnded()">
+          Your browser does not support HTML 5 video!
+        </video>
+
+        <br>
+
+        <div id="vidContainer">
+          <div id="vidTitle"></div>
+          <div id="vidOriginal"></div><br>
+          <div id="vidDescription"></div>
+        </div>
+      </td>
     </tr>
-    <tr>
-      <td class="rowHeader">Fucking Tables</td>
-    </tr>
-    <tr>
-      <td class="rowHeader">Execution</td>
-    </tr>
-    <tr>
-      <td class="rowHeader">Risk Management</td>
-    </tr>
-    <tr>
-      <td class="rowHeader">Quality Control</td>
-    </tr>
-    <tr>
-      <td class="rowHeader">Communications</td>
-    </tr> -->
   </table>
-  <!--<video style="width:175px;height:auto;">-->
-  <video id="video" width="550" onended="vidEnded()">
-    Your browser does not support HTML 5 video!
-  </video>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="values.js"></script>

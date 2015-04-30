@@ -1,7 +1,3 @@
-td {
-	padding: 5px;
-}
-
 .rowHeader {
 	font-weight: bold;
 }
@@ -13,10 +9,40 @@ td {
 	margin-right: auto;
 }
 
+#mainTable {
+	margin-right: .5%;
+}
+
 #vidTable {
 	float: left;
 }
 
+#vidTable td {
+	padding: 5px;
+}
+
 #video {
-	float: right;
+	margin: 10px;
+	width: 100%;
+}
+
+#vidContainer {
+	margin-left: 15px;
+}
+
+#vidTitle {
+	font-weight: bold;
+	font-size: 48px;
+	font-size: 2.5vw;
+}
+
+#vidOriginal {
+	font-style: italic;
+	font-size: 15px;
+	font-size: .6vw;
+}
+
+#vidDescription {
+	font-size: 20px;
+	font-size: .8vw;
 }

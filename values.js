@@ -65,7 +65,7 @@ var values = {
         "Planning": {
           source: "plansharon1.mp4",
           type: "video/mp4",
-          thumb: "default.png",
+          thumb: "plansharon1.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
           description: "This was a good fit because blah..."
@@ -73,7 +73,7 @@ var values = {
         "Execution": {
           source: "exsharon.mp4",
           type: "video/mp4",
-          thumb: "default.png",
+          thumb: "exsharon.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
           description: "This was a good fit because blah..."
@@ -81,7 +81,7 @@ var values = {
         "Risk Management": {
           source: "rmsharon.mp4",
           type: "video/mp4",
-          thumb: "default.png",
+          thumb: "rmsharon.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
           description: "This was a good fit because blah..."
@@ -89,7 +89,7 @@ var values = {
         "Quality Control": {
           source: "QCsharon.mp4",
           type: "video/mp4",
-          thumb: "default.png",
+          thumb: "QCsharon.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
           description: "This was a good fit because blah..."
@@ -97,7 +97,7 @@ var values = {
         "Communications": {
           source: "commSHARON.mp4",
           type: "video/mp4",
-          thumb: "default.png",
+          thumb: "commSHARON.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
           description: "This was a good fit because blah..."
