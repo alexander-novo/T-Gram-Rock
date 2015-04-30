@@ -104,9 +104,53 @@ var values = {
         }
       }
     },
+
+
     "Jaime Parra-Alvarez": {
-      email: "pckillagoku@gmail.com"
-    }
+      email: "pckillagoku@gmail.com",
+      videos: {
+        "Planning": {
+          source: "JAPPlanning.mp4",
+          type: "video/mp4",
+          thumb: "JAPPlanningThumb.png",
+          title: "Sim City failure at launch",
+          original: "ProJared review of Sim City",
+          description: "This was a good fit because showed poor planning on EA's level"
+        },
+        "Execution": {
+          source: "JAPExecuting.mp4",
+          type: "video/mp4",
+          thumb: "JAPExecuting.png",
+          title: "Great and poor football execution",
+          original: "NFL",
+          description: "This was a good fit because it showed both great execution from the offense and terrible execution on defense"
+        },
+        "Risk Management": {
+          source: "JAPRiskManagment.mp4",
+          type: "video/mp4",
+          thumb: "JAPRiskManagmentThumb.png",
+          title: "Poor risk management",
+          original: "Random Youtube Video",
+          description: "This was a good fit because it showed blatent lack of Risk Management"
+        },
+        "Quality Control": {
+          source: "JAPQualityControl.mp4",
+          type: "video/mp4",
+          thumb: "JAPQualityControlThumb.png",
+          title: "Poor knife QC",
+          original: "Poor knive QC",
+          description: "This was a good fit because it showed a lack of quality control "
+        },
+        "Communications": {
+          source: "JAPCommunication.mp4",
+          type: "video/mp4",
+          thumb: "JAPCommunicationThumb.png",
+          title: "Funny example of bad communication",
+          original: "Airplanes",
+          description: "This was a good fit because it comedically shows what happens with bad communcation"
+        }
+      }
+    },
 
   }
 
