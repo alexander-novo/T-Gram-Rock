@@ -98,41 +98,41 @@ var values = {
           source: "plansharon1.mp4",
           type: "video/mp4",
           thumb: "plansharon1.png",
-          title: "Vitameatavegamin",
-          original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          title: "Planning",
+          original: "Cowboys and Aliens",
+          description: "Planning an attack on an alien ship"
         },
         "Execution": {
           source: "exsharon.mp4",
           type: "video/mp4",
           thumb: "exsharon.png",
-          title: "Vitameatavegamin",
-          original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          title: "Executing a plan",
+          original: "Cowboys and Aliens",
+          description: "Execxuting the plan to save there people form the alien slip"
         },
         "Risk Management": {
           source: "rmsharon.mp4",
           type: "video/mp4",
           thumb: "rmsharon.png",
-          title: "Vitameatavegamin",
-          original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          title: "Flying a tank",
+          original: "A-Team",
+          description: "Although flying a tank shows a modicum of planning and executing, but whoever was in charge of Risk Management was asleep on the job."
         },
         "Quality Control": {
           source: "QCsharon.mp4",
           type: "video/mp4",
           thumb: "QCsharon.png",
-          title: "Vitameatavegamin",
-          original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          title: "Quality People",
+          original: "Lethal Weapon",
+          description: "Quality control doesn't always apply to deliverables, it can apply to team members also."
         },
         "Communications": {
           source: "commSHARON.mp4",
           type: "video/mp4",
           thumb: "commSHARON.png",
-          title: "Vitameatavegamin",
-          original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          title: "Communication A-team style",
+          original: "The A-Team",
+          description: "The importance of communication, even one word misunderstood cand make a world of difference."
         }
       }
     },
