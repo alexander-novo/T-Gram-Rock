@@ -108,7 +108,7 @@ var values = {
           thumb: "exsharon.png",
           title: "Executing a plan",
           original: "Cowboys and Aliens",
-          description: "Execxuting the plan to save there people form the alien slip"
+          description: "Executing the plan to save there people form the alien slip"
         },
         "Risk Management": {
           source: "rmsharon.mp4",

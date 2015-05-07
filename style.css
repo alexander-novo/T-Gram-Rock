@@ -23,11 +23,16 @@
 
 #video {
 	margin: 10px;
-	width: 100%;
+	width: 96%;
 }
 
 #vidContainer {
 	margin-left: 15px;
+}
+
+#blah {
+	position: fixed;
+	top: 0px;
 }
 
 #vidTitle {
