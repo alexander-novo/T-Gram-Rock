@@ -5,12 +5,44 @@ var values = {
       email: "alexander_novo@mail.tmcc.edu",
       videos: {
         "Planning": {
-          source: "I-Love-Lucy-Vitameatavegamin.webm",
-          type: "video/webm",
+          source: "lucy.mp4",
+          type: "video/mp4",
           thumb: "I-Love-Lucy-Vitameatavegamin.png",
           title: "Vitameatavegamin",
           original: "I Love Lucy",
-          description: "This was a good fit because blah..."
+          description: "This clip shows bad planning on behalf of the vitameatavegamin commercial crew because they didn't forsee that the high alcohol content would make Lucy unable to do the commercial"
+        },
+        "Quality Control": {
+          source: "I-Love-Lucy-Vitameatavegamin.mp4",
+          type: "video/mp4",
+          thumb: "I-Love-Lucy-Vitameatavegamin.png",
+          title: "Vitameatavegamin",
+          original: "I Love Lucy",
+          description: "This clip shows bad quality control for Vitameatavegamin, as Lucy has a very hard time swallowing it, let alone claiming that it tastes \"just like candy\""
+        },
+        "Execution": {
+          source: "-The Play- - Multicam Edition.mp4",
+          type: "video/mp4",
+          thumb: "Execution.png",
+          title: "The Play",
+          original: "The Dota 2 2012 International",
+          description: "This clip shows how prepared Na'Vi was to deal with what iG had to throw at them, and how well they were able to execute their plan on the spot."
+        },
+        "Risk Management": {
+          source: "Funny Ads - Risk is Everywhere.mp4",
+          type: "video/mp4",
+          thumb: "Risk.png",
+          title: "Risk doesn't sleep",
+          original: "Commercial",
+          description: "Risk comes from unexpected places"
+        },
+        "Communications": {
+          source: "Misunderstandings can be funny.mp4",
+          type: "video/mp4",
+          thumb: "Communication.png",
+          title: "What was that?",
+          original: "Commercial",
+          description: "Old people can't communicate very well"
         }
       }
     },
