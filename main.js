@@ -6,9 +6,6 @@ $(document).ready(function() {
   }, function(e) {
     $( this ).removeAttr("controls");
   });
-
-  var msg = new SpeechSynthesisUtterance('Hello World');
-  window.speechSynthesis.speak(msg);
 });
 
 function setupTable() {
